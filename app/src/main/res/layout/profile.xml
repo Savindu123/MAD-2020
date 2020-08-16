@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b"
+    tools:context=".MainActivity2">
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="313dp"
+        android:layout_height="700dp"
+        android:alpha="0.3"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/email"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/nic"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/pnumber"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Saddress"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="160dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/welcome"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/images" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="98dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/unme"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName10"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="98dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/pass1"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName11"
+        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:text="@string/Detailssss"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName11"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/Detailssss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName18"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Detailssss"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName12" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName19"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Detailssss"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName20" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName21"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:text="@string/Detailssss"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName19" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName20"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:text="@string/Detailssss"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName18" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName12"
+        android:layout_width="116dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Detailssss"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/Fullna"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#17cfad"
+        android:text="@string/Editd"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="#17cfad"
+        android:text="@string/Deleacc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="44dp"
+        android:background="#17cfad"
+        android:text="@string/orderd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName21" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
