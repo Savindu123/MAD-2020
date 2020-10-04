@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUpActivity">
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blackfonts"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="220dp"
+        android:layout_height="480dp"
+        android:background="@drawable/shape_left_panal"
+        app:layout_constraintTop_toBottomOf="@id/rlHeader"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/loginfrm"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/shape_login_pannel"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/rlHeader">
+
+        <EditText
+            android:id="@+id/txtuserc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="UserName" />
+
+        <EditText
+            android:id="@+id/txtlpassc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/txtlconpassc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/profileCustomer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/propic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/rlHeader" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fbtn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="200dp"
+        android:contextClickable="true"
+        android:paddingTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_done_24"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/loginfrm"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
