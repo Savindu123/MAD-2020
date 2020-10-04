@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:id="@+id/rlHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blackfonts"
+            android:padding="10dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        app:layout_constraintTop_toBottomOf="@id/rlHeader"
+        android:layout_width="220dp"
+        android:layout_height="480dp"
+        android:background="@drawable/shape_left_panal"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/loginfrm"
+        android:layout_height="330dp"
+        app:layout_constraintTop_toBottomOf="@+id/rlHeader"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_login_pannel"
+        android:layout_marginLeft="30dp"
+        android:paddingTop="70dp"
+        android:paddingLeft="50dp"
+        android:padding="50dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="UserName"
+            android:id="@+id/txtuser"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/txtlpass"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="forgot password"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:background="@drawable/shape_login_button"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/loginfrm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_login_button"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
+        app:layout_constraintStart_toEndOf="@id/btnLogin"
+        android:text="Join as Driver"
+        android:padding="10dp"
+        android:textColor="#FFF"
+        android:id="@+id/driverLogIn"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_login_button"
+        app:layout_constraintTop_toBottomOf="@id/driverLogIn"
+        app:layout_constraintStart_toStartOf="@id/driverLogIn"
+        android:textColor="#FFF"
+        android:text="Join as Seller"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/sellerLogIn"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@id/loginfrm"
+        android:layout_marginLeft="40dp"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an Account"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cusSignUp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20sp"
+            android:textColor="@color/color_pink"
+            android:background="#FFF"
+            android:clickable="true"
+            android:text="Sign Up"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

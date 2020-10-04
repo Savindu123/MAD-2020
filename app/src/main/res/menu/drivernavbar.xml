@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_homed"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/nav_ordersd"
+        android:icon="@drawable/ic_baseline_queue_24"
+        android:title="Ongoing Queue"/>
+    <item
+        android:icon="@drawable/ic_baseline_payment_24"
+        android:title="Payments"
+        android:id="@+id/nav_paymentsd"/>
+</menu>
